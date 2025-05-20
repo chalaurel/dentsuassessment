@@ -1,0 +1,33 @@
+$primary-color: #00255a;
+$secondary-color: #0572d2;
+$tertiary-color: #adbace;
+$quaternary-color: #e9ecef;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #ccc;
+$color-blue: #007bff;
+$color-green: #28a745;
+$color-yellow: #ffc107;
+$color-red: #dc3545;
+$color-purple: #6f42b9;
+$color-orange: #fd7e1c;
+$color-gray-light: #f8f9fa;
+$color-gray-dark: #d3d4d5;
+
+:export{
+    primaryColor: $primary-color;
+    secondaryColor: $secondary-color;
+    tertiaryColor: $tertiary-color;
+    quaternaryColor: $quaternary-color;
+    colorWhite: $color-white;
+    colorBlack: $color-black;
+    colorGray: $color-gray;
+    colorBlue: $color-blue;
+    colorGreen: $color-green;
+    colorYellow: $color-yellow;
+    colorRed: $color-red;
+    colorPurple: $color-purple;
+    colorOrange: $color-orange;
+    colorGrayLight: $color-gray-light;
+    colorGrayDark: $color-gray-dark;
+}

@@ -1,0 +1,163 @@
+
+@import 'variables.scss';
+
+
+.container{
+    width: 100%;
+    div {
+        padding: 10px;
+  
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        }
+        h1 {
+            color: $secondary-color;
+        }
+    }
+}
+
+.cardtitle {
+color: $primary-color;
+font-weight: 800;
+font-size: 22px;
+}
+
+.title {
+    color: $primary-color;
+    font-weight: 800;
+}
+
+@mixin flex-box($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.flexcontainer {
+    @include flex-box(row, space-between, left);
+}
+
+.flexDetail {
+    @include flex-box(column, right, center);
+    
+}
+.detailPageLayout {
+    @include flex-box(row, space-evenly, center);
+}
+
+.image {
+    // aspect-ratio: 16 / 9;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+  .card {
+    width: 600px;
+    margin: 10px;
+    padding: 10px;
+    color: $primary-color;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    .mainList {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        background-color: $color-gray-light;
+    }
+
+    .title {
+        font-size: 24px;
+        // margin: 10px;
+
+    }
+
+    .slogan {
+        font-size: 20px;
+        margin: 10px;
+        font-weight: 400;
+    }
+
+    .eventDetails{
+        @include flex-box(row, space-evenly, center);
+    }
+    .about {
+        width: 75%; 
+    }
+
+
+    .details {
+        @include flex-box(column, space-evenly, flex-start);
+        h3 {
+            margin: -5px;
+            color: $secondary-color;
+        }
+        p {
+            text-align: left;
+        }
+        .location {
+            font-style: italic;
+            font-size: 16px;
+            margin-top: -10px;
+        }
+
+        .slogan {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: -10px;
+        }
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            margin-top: -10px;
+            text-align: center;
+        }
+    }
+  }
+
+
+//   .organizercard {
+//     width: 500px;
+//     margin: 10px;
+//     padding: 10px;
+//     border-radius: 5px;
+//     color: $primary-color;
+//     text-align: center;
+//     font-size: 16px;
+//     margin-bottom: 20px;
+//   }
+
+
+
+  .primary {
+    background-color: $primary-color;
+    color: $color-gray-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+//   utilities
+
+.p10 {
+    padding: 10px
+}
+.pt20 {
+    padding-top: 20px
+}
+
+.m20{
+    margin: 20px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+
+.italic {
+    font-style: italic;
+}

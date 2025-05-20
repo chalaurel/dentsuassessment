@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#Dentsu Assessment
 
-## Getting Started
+- Framework: Next.js (using App Router structure)
+- Language: TypeScript
+- GraphQL Client: Apollo Client
+- Styling: SCSS (with variables) – No Tailwind
+- Testing: Jest (unit tests)
+- Accessibility: Compliant with WCAG 2.1 AA
+- UI/Component Libraries: Not permitted
+- Image Handling: Fallback for missing images
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Used App Router structure:
+Used Import aliases to reduce file size and improve readability.
+Used SCSS variables for styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## GraphQL Client
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Used Apollo Client with TypeScript types for better type safety and code completion.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Testing
 
-## Learn More
+Used Jest for unit tests, ensuring all components are working as expected.
 
-To learn more about Next.js, take a look at the following resources:
+## Accessibility
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Compliant with WCAG 2.1 AA to ensure the app is accessible to users with disabilities.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## UI/Component Libraries
 
-## Deploy on Vercel
+Not permitted due to project requirements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Image Handling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fallback for missing images using Next.js' built-in image optimization features.
+This project fulfills all the given requirements and guidelines, ensuring a high-quality user experience while adhering to best practices in web development.
