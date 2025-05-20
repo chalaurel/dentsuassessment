@@ -28,6 +28,8 @@ export default function Home() {
             name={conference.name}
             slogan={conference.slogan}
             locations={conference.locations}
+            startDate={conference.startDate}
+            endDate={conference.endDate}
           />
         ))}
       </div>

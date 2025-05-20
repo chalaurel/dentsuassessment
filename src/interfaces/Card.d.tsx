@@ -4,6 +4,9 @@ export interface CardProps {
     slogan?: string;
     image?: string;
     href?: string;
+    endDate: string;
+    startDate: string;
+    locations?: LocationProps[];
 }
 
 export interface LocationProps {

@@ -6,6 +6,8 @@ export const GET_CONFERENCES = gql`
       id
       name
       slogan
+      endDate
+      startDate
       locations {
         image{
             url

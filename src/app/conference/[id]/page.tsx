@@ -18,8 +18,8 @@ export default function ConferenceDetail() {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
     if (!conference) return <p>Conference not found</p>;
-
     return (
+
         <>
             <Link href="/" className={`${styles.mt20}`}>
                 &larr; Back to Conferences
@@ -41,7 +41,7 @@ export default function ConferenceDetail() {
                             <div className={`${styles.title}`}>
                                 {conference.name}
                             </div>
-                            <p> {conference.startDate} {conference.endDate} </p>
+                            <p> {new Date(conference.startDate).toLocaleDateString('en-US', { year: "numeric", month: 'long', day: 'numeric' })} - {new Date(conference.endDate).toLocaleDateString('en-US', { year: "numeric", month: 'long', day: 'numeric' })}</p>
                             <div className={`${styles.location}`}>
                                 {conference.locations && conference.locations.length > 0 ? (
                                     <p>{conference.locations[0].name}, {conference.locations[0].city},  {conference.locations[0].country.name}</p>

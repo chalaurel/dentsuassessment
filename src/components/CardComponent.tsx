@@ -5,7 +5,7 @@ import ButtonComponent from './ButtonComponent';
 import { useRouter } from 'next/navigation';
 import ConferenceImage from '@/components/ConferenceImage';
 
-const CardComponent: React.FC<CardProps> = ({ id, name, slogan, locations }) => {
+const CardComponent: React.FC<CardProps> = ({ id, name, slogan, locations, endDate, startDate }) => {
     const router = useRouter();
 
     const handleDetailsClick = () => {
@@ -26,12 +26,17 @@ const CardComponent: React.FC<CardProps> = ({ id, name, slogan, locations }) => 
                 />
             </div>
             <h2 className={styles.cardtitle}>{name}</h2>
-            <div>
+            <p> {new Date(startDate).toLocaleDateString('en-US', { year: "numeric", month: 'long', day: 'numeric' })} - {new Date(endDate).toLocaleDateString('en-US', { year: "numeric", month: 'long', day: 'numeric' })}</p>
+            <p className="">
+                {locations && locations.length > 0 ? (
+                    <p>{locations[0].name}, {locations[0].city},  {locations[0].country.name}</p>
+                ) : (
+                    <p>Location not available</p>
+                )}
+            </p>
+            <p className={`${styles.italic}`}>{slogan}</p>
 
-            </div>
-
-            <p className="text-gray-600 mb-4">{slogan}</p>
-            <div className="mt-4 flex justify-end">
+            <div className="">
                 <ButtonComponent
                     type="primary"
                     label="Details"
