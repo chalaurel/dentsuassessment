@@ -4,7 +4,6 @@
 - Language: TypeScript
 - GraphQL Client: Apollo Client
 - Styling: SCSS (with variables) – No Tailwind
-- Testing: Jest (unit tests)
 - Accessibility: Compliant with WCAG 2.1 AA
 - UI/Component Libraries: Not permitted
 - Image Handling: Fallback for missing images
@@ -18,10 +17,6 @@ Used SCSS variables for styling.
 ## GraphQL Client
 
 Used Apollo Client with TypeScript types for better type safety and code completion.
-
-## Testing
-
-Used Jest for unit tests, ensuring all components are working as expected.
 
 ## Accessibility
 
